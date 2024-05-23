@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PersonController">
+   <children>
+      <TableView fx:id="tablaPersonas" layoutX="40.0" layoutY="37.0" prefHeight="264.0" prefWidth="520.0" onMouseClicked="#seleccionar">
+        <columns>
+            <TableColumn fx:id="columnaNombre" prefWidth="123.0" text="Nombre" />
+            <TableColumn fx:id="columnaApellidos" prefWidth="319.0" text="Apellidos" />
+            <TableColumn fx:id="columnaEdad" prefWidth="77.0" text="Edad" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAñadir" layoutX="40.0" layoutY="324.0" mnemonicParsing="false" onAction="#agregarPersona" prefHeight="30.0" prefWidth="160.0" text="Agregar persona" />
+      <Button fx:id="btnModificar" layoutX="220.0" layoutY="324.0" mnemonicParsing="false" onAction="#modificarPersona" prefHeight="30.0" prefWidth="160.0" text="Modificar" />
+      <Button fx:id="btnEliminar" layoutX="400.0" layoutY="324.0" mnemonicParsing="false" onAction="#eliminarPersona" prefHeight="30.0" prefWidth="160.0" text="Eliminar" />
+   </children>
+</AnchorPane>
